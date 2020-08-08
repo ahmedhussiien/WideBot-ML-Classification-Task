@@ -1,0 +1,4 @@
+venv/
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+ipython_config.py
