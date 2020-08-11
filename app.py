@@ -1,15 +1,13 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Flask, request, jsonify, render_template
 from serve import get_model_api 
 
 app = Flask(__name__)
-CORS(app) 
 model_api = get_model_api()
 
 # Default route
 @app.route('/')
-def index():
-    return "Widebot bonary classifier API"
+def home():
+    return render_template('home.html')
 
 # HTTP Errors handlers
 @app.errorhandler(404)
