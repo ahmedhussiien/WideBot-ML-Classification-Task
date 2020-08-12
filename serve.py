@@ -33,7 +33,6 @@ def get_model_api():
         for arg in args:
             df[arg].iloc[0] = request.args.get(arg)
 
-        print(df.head())
         X = prepare_input(df, X_categorical_mode, X_numerical_mean, encoded_features, scaler)
         y_pred = model.predict(X)
         y_pred_enc = np.where(y_pred == 0, 'no.', 'yes.')

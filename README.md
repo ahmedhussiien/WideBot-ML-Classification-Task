@@ -2,11 +2,12 @@
 
 ## Requirements
 
-Given the training and validation datasets, http://bit.ly/widebot-new-binclf-data , Create and train a machine learning model using the training set that performs well on the validation set. You should decide on the metrics of "performance" yourself, We will assess your decision.
+Given the training and validation datasets, http://bit.ly/widebot-new-binclf-data , Create and train a machine learning model using the training set that performs well on the validation set.
 
-## Classifier API demo
+## Classifier API
+Check the API [through this link](https://widebot-classifier.herokuapp.com/)
 
-check the API [through this link](https://widebot-classifier.herokuapp.com/)
+
 
 ## Runing the app on your local machine
 
