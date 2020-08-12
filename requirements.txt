@@ -9,6 +9,7 @@ decorator==4.4.2
 defusedxml==0.6.0
 entrypoints==0.3
 Flask==1.1.2
+gunicorn==20.0.4
 importlib-metadata==1.7.0
 ipykernel==5.3.4
 ipython==7.17.0
@@ -35,7 +36,6 @@ pandocfilters==1.4.2
 parso==0.7.1
 pexpect==4.8.0
 pickleshare==0.7.5
-pkg-resources==0.0.0
 prometheus-client==0.8.0
 prompt-toolkit==3.0.5
 ptyprocess==0.6.0
