@@ -1,0 +1,185 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "API to serve the classification model made for WideBot task #2.",
+    "version": "1.0.0",
+    "title": "WideBot-Classifier-API"
+  },
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Prediction Request",
+      "description": "API to serve the classification model"
+    }
+  ],
+  "paths": {
+    "/api": {
+      "get": {
+        "tags": ["Prediction Request"],
+        "summary": "Returns predicition",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "variable1"
+          },
+          {
+            "in": "query",
+            "name": "variable2"
+          },
+          {
+            "in": "query",
+            "name": "variable3"
+          },
+          {
+            "in": "query",
+            "name": "variable4"
+          },
+          {
+            "in": "query",
+            "name": "variable5"
+          },
+          {
+            "in": "query",
+            "name": "variable6"
+          },
+          {
+            "in": "query",
+            "name": "variable7"
+          },
+          {
+            "in": "query",
+            "name": "variable8"
+          },
+          {
+            "in": "query",
+            "name": "variable9"
+          },
+          {
+            "in": "query",
+            "name": "variable10"
+          },
+          {
+            "in": "query",
+            "name": "variable11"
+          },
+          {
+            "in": "query",
+            "name": "variable12"
+          },
+          {
+            "in": "query",
+            "name": "variable13"
+          },
+          {
+            "in": "query",
+            "name": "variable14"
+          },
+          {
+            "in": "query",
+            "name": "variable15"
+          },
+          {
+            "in": "query",
+            "name": "variable17"
+          },
+          {
+            "in": "query",
+            "name": "variable18"
+          },
+          {
+            "in": "query",
+            "name": "variable19"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/components/schemas/predicition"
+            }
+          },
+          "404": {
+            "description": "Failed. request cannot be fulfilled."
+          },
+          "500": {
+            "description": "Failed. Internal server error."
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "predicition": {
+        "properties": {
+          "predictedClass": {
+            "type": "string"
+          }
+        }
+      },
+      "predictionRequest": {
+        "type": "object",
+        "properties": {
+          "variable1": {
+            "type": "string"
+          },
+          "variable2": {
+            "type": "float"
+          },
+          "variable3": {
+            "type": "float"
+          },
+          "variable4": {
+            "type": "string"
+          },
+          "variable5": {
+            "type": "string"
+          },
+          "variable6": {
+            "type": "string"
+          },
+          "variable7": {
+            "type": "string"
+          },
+          "variable8": {
+            "type": "float"
+          },
+          "variable9": {
+            "type": "string"
+          },
+          "variable10": {
+            "type": "string"
+          },
+          "variable11": {
+            "type": "float"
+          },
+          "variable12": {
+            "type": "string"
+          },
+          "variable13": {
+            "type": "string"
+          },
+          "variable14": {
+            "type": "string"
+          },
+          "variable15": {
+            "type": "float"
+          },
+          "variable17": {
+            "type": "float"
+          },
+          "variable18": {
+            "type": "string"
+          },
+          "variable19": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
